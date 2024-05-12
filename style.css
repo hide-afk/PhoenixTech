@@ -1,0 +1,735 @@
+* {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 30, 30);
+    color:white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bdbdbd;
+}
+
+nav{
+    width:100%;
+    height:95px;
+    background:#bdbdbd;
+    overflow:auto;
+}
+
+nav a:hover{
+    background: #8a8a8a;
+    border-radius: 15%;
+    transition: 0.3s;
+}
+.ulencabezado {
+    padding: 0;
+    margin:0 0 0 150px;
+    list-style: none;
+}
+
+.liencabezado {
+    float: right;
+    margin-right: 30px;
+}
+
+.logo img{
+    position:absolute;
+    margin-top:0px;
+    margin-left:3px;
+    width: 250px;
+    height: 100px;
+}
+
+nav a{
+    width: 100%;
+    display: block;
+    padding: 20px 15px;
+    margin-top: 14px;
+    text-decoration: none;
+    font-family: 'Lucida Console';
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.eslogan {
+    align-content: center;
+    margin-left:80px;
+    margin-right: 80px;
+    width: 1360px;
+    height: 520px;
+    border-radius: 20%;
+}
+
+#titulo-parrafo{
+    margin-top: 0px;
+    font-family: Arial;
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: 85px;
+    margin-right: 0px;
+}
+
+#parrafos{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Helvetica;
+    max-width: 455px;
+    margin-right: 15px;
+    margin-left: 85px;
+    text-align: justify;
+}
+
+.contenedor1 {
+    display: flex;
+    width: 100%;
+}
+
+.contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-right: 56px;
+    margin-left: 0px;
+}
+
+.carta {
+    width: 264px;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+
+.titulocarta{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 14px;
+}
+.imagenref {
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 110px;
+    scale: 70%;
+    box-shadow: 0 6px 10px #000000;
+    border-radius: 500px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.carta:hover .imagenref {
+    transform:scale(140%)
+}
+
+.info p{
+    align-items: left;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.masinfo{
+    text-decoration: none;
+    color: rgb(255, 65, 65);
+    text-decoration: underline;
+    font-family: 'Lucida Console';
+    cursor: pointer;
+}
+
+#formulario {
+    background-color: #202020;
+    border-radius: 30px;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#formtitle{
+    margin-top: 10px;
+    font-family: 'Lucida Console';
+    font-size: 25px;
+    text-align: center;
+}
+#formsubtitle{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-family: 'Lucida Console';
+    font-size: 16px;
+    text-align: center;
+}
+.upform {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:0px;
+    margin-right: 140px;
+    margin-left:210px;
+    margin-bottom: 50px;
+    font-family: 'Lucida Console';
+    font-size: 16px;
+}
+
+.downform {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0px;
+    margin-left:210px;
+    font-family: 'Lucida Console';
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#listaaveria {
+    margin-bottom: 50px;
+}
+
+.hardwarepopup, .redespopup, .softwarepopup {
+    text-align: center;
+    display: none;
+    position: fixed;
+    width: 1200px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #202020;
+    box-shadow: 10px #000000;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+}
+
+.averias {
+    display: block;
+    padding: 40px;
+}
+
+.averias1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0px; 
+    margin-top: 0px;
+    width: 100%;
+    
+}
+
+.averias2 {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 0px;
+    margin-top: 30px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.titulopopup {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 40px;
+    margin-left: 22px;
+}
+
+.subtitulopopup {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 16px;
+    margin-left: 22px;
+}
+
+.tituloaveria {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    width: 100%;
+}
+
+.imagenaveria {
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 170px;
+    height: 170px;
+    scale: 70%;
+    box-shadow: 0 6px 10px #000000;
+    border-radius: 500px;
+}
+
+.botoncierre {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(255, 65, 65);
+    text-decoration: underline;
+    font-family: 'Lucida Console';
+    margin-top: 70px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cartasrecambios {
+    width: 500px;
+    height: 340px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+
+.cartasrecambios:hover .imagenref {
+    transform:scale(140%)
+}
+
+.contenedoropciones1 {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedoropciones2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 120px;
+    margin-top: 120px;
+}
+
+.tituloopciones{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 22px;
+}
+
+.imagenopciones {
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 110px;
+    height: 110px;
+    scale: 120%;
+    box-shadow: 0 6px 10px #000000;
+    border-radius: 500px;
+    transition: transform 0.2s ease-in-out;
+}
+.cartasrecambios:hover .imagenopciones {
+    transform:rotate(40deg) 
+}
+
+.masinforecambios{
+    text-decoration: none;
+    color: rgb(255, 65, 65);
+    text-decoration: underline;
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contenedorrecambios1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedorrecambios2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 25px;
+    margin-top: 50px;
+
+}
+
+.titulopieza {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 28px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.modelopieza {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+}
+.bloquerecambio {
+    width: 305px;
+    height: 270px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+.imagenpieza {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    scale: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.bloquerecambio:hover .imagenpieza {
+    transform:scale(145%)
+}
+.contenedorspecs {
+    position: relative;
+    display: inline-block;
+}
+
+.titulospecs {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 10px;    
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.desplegable {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #363636;
+    font-family: 'Courier New';
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 330px;
+    border-radius: 3px;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.desplegable p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.titulospecs:hover , .contenedorspecs:hover .desplegable {
+    display: block;
+}
+
+footer{
+    margin-top: 135px;
+    width:100%;
+    height:125px;
+    background:#bdbdbd;
+    overflow:center;
+}
+
+footer a:hover{
+    background: #8a8a8a;
+    border-radius: 15%;
+    transition: 0.3s;
+}
+
+footer a{
+    width: 140px;
+    display: block;
+    padding: 20px 15px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: 'Lucida Console';
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 550px;
+}
+#footerliencabezado {
+    float: auto;
+    margin-right: 0px;
+    text-align: center;
+    width: 80px;
+}
+
+#footerulencabezado {
+    width: 80px;
+    padding: 0;
+    margin:0 0 0 150px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto;
+}
+#tituloconsultas {
+    margin-top:50px;
+    margin-bottom: 50px;
+    font-family: 'Lucida Console';
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedorconsultas {
+    display: flex;
+    width: 100%;
+}
+
+.contenedorconsultas1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-right: 56px;
+    margin-left: 300px;
+}
+
+.contenedorconsultas2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-right: 56px;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.cartaconsulta {
+    width: 450px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+
+.tituloconsulta{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.infoconsulta p{
+    align-items: left;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-family: 'Lucida Console';
+}
+
+.cartaconsulta2 {
+    width: 450px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+
+.contenedorconsultas3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-right: 56px;
+    margin-left: 550px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulosfaq {
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 40px;
+    margin-left: 22px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faq-item {
+    margin-left: 75px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 90%;
+}
+
+.pregunta {
+    cursor: pointer;
+    background-color: #dedede;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Lucida Console';
+}
+
+.respuesta {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    font-family: 'Helvetica';
+    transition: max-height 1.5s ease-in-out;
+    line-height : 25px;
+    
+}
+.faq-item:hover .respuesta {
+    max-height: 1000px;
+}
+
+.contenedorclientes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 100px;
+    padding-bottom: 0;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.cartacliente {
+    width: 431px;
+    height: 320px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+
+.nombrecliente{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 14px;
+}
+
+.imagencliente {
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    scale: 70%;
+    box-shadow: 0 6px 10px #000000;
+    border-radius: 500px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cartacliente h5 {
+    text-align: center;
+    font-family: 'Lucida Console';
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.estrellas {
+    scale: 30%;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedornosotros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 100px;
+    padding-bottom: 0;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.titulonosotros{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cartanosotros {
+    width: 431px;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px #000000;
+    text-align: center;
+    font-family: 'Lucida Console';
+    background-color: #202020;
+}
+
+.cartanosotros h5 {
+    text-align: center;
+    font-family: 'Lucida Console';
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cartanosotros h4 {
+    text-align: center;
+    font-family: 'Lucida Console';
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgb(255, 65, 65);
+    text-decoration: none;
+}
+
+.tituloacta{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 27px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.actaconstitucio {
+    width: 345px;
+    height: 460px;
+    border-radius: 10px;
+    margin-left: 600px;
+    margin-top: 10px;
+}
