@@ -17,7 +17,6 @@
             <ul class="ulencabezado">
                 <li class="liencabezado"><a href="osticket/upload/">Contacto</a></li>
                 <li class="liencabezado"><a href="faqs.html">FAQ</a></li>
-                <li class="liencabezado"><a href="consultas.php">Consultas</a></li>
                 <li class="liencabezado"><a href="index.html#1">Servicios</a></li>
                 <li class="liencabezado"><a href="recambios.html">Recambios</a></li>
                 <li class="liencabezado"><a href="index.html">Inicio</a></li>
@@ -31,7 +30,6 @@
         $consultairpfultimomes=$conexion->query("SELECT SUM(Retención_IRPF) AS IRPFUltimoMes FROM nominas WHERE Fecha = '2024-02-29';");
         $consultassanoactual=$conexion->query("SELECT SUM(Retención_SS) AS SSAnoActual FROM nominas WHERE YEAR(Fecha) = YEAR(CURDATE());");
         $consultanombresempleados=$conexion->query("SELECT CONCAT(Nombre, ' ', Apellido) AS Nombre FROM empleados");
-    
     ?>
 
     <h3 id="tituloconsultas">Consultas sobre la empresa</h3>

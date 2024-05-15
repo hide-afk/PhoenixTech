@@ -10,140 +10,180 @@
 </head>
 
 <body>
-        <div class="logo">
-            <a href="index.html"><img src="PhoenixTechCompleto.png"></a>
+    <div class="logo">
+        <a href="index.html"><img src="PhoenixTechCompleto.png"></a>
+    </div>
+    <nav>
+        <ul class="ulencabezado">
+            <li class="liencabezado"><a href="faqs.html">FAQ</a></li>
+            <li class="liencabezado"><a href="">Consultas (not avaliable)</a></li>
+            <li class="liencabezado"><a href="index.html#1">Servicios</a></li>
+            <li class="liencabezado"><a href="recambios.html">Recambios</a></li>
+            <li class="liencabezado"><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1 class="titulosfaq">Redes - FAQ</h1>
+        <div class="cajalogo">
+            <img style="width: 150px;height: 150px;" src="/logos/networklogo.png">
         </div>
-        <nav>
-            <ul class="ulencabezado">
-                <li class="liencabezado"><a href="osticket/upload/">Contacto</a></li>
-                <li class="liencabezado"><a href="faqs.html">FAQ</a></li>
-                <li class="liencabezado"><a href="consultas.php">Consultas</a></li>
-                <li class="liencabezado"><a href="index.html#1">Servicios</a></li>
-                <li class="liencabezado"><a href="recambios.html">Recambios</a></li>
-                <li class="liencabezado"><a href="index.html">Inicio</a></li>
-            </ul>
-        </nav>
+    </div>
 
-        <div>
-                <h1 class="titulosfaq">Redes - FAQ</h1>
-                <img style="width: 150px;height: 150px; margin-left: 702px;margin-bottom: 30px;" src="/logos/networklogo.png" alt="">
-        </div>
-
-        <div>
-            <div class="faq-item">
-                <div class="pregunta">1. No se conecta a internet</div>
-                <div class="respuesta">
-                    1.	Problemas de conexión Wi-Fi:<br>
-                    •	Verifica la conexión Wi-Fi, reinicia el router y asegúrate que está bien conectado el cable de red.<br>
-                    <br>
-                    2.	Controladores de red desactualizados o corruptos:<br>
-                    •	Actualiza los controladores de la tarjeta de red a través del Administrador de dispositivos.<br>
-                    <br>
-                    3.	Configuración de TCP/IP incorrecta:<br>
-                    •	Ejecuta "ipconfig /renew" en la línea de comandos para renovar la configuración de red.<br>
-                    <br>
-                    4.	Firewall o software de seguridad bloqueando la conexión:<br>
-                    •	Revisa la configuración del firewall para asegurarte de que no esté bloqueando la conexión a Internet.
-
-                </div>
-            </div>
-        
-            <div class="faq-item">
-                <div class="pregunta">2. No se conecta al servidor</div>
-                <div class="respuesta">
-                    •	Confirma si tanto el servidor con la maquina host están conectados en la misma red. <br>
-                    •	Asegúrate de que el funcionamiento del servidor es correcto y que es accesible desde otros ordenadores. <br>
-                    •	Verifica la conexión haciendo un ping. <br>
-                    •	Revisar la configuración de red de ambos dispositivos (máscara de red, Puerta de enlace, DNS, etc.)
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">3. En Windows puedo navegar por IP, pero no por URL</div>
-                <div class="respuesta">
-                    •	Esto se debe a un problema con el DNS. <br>
-                    1.	Dirígete al Panel de control, Redes e Internet, Ver el estado y las tareas de red, Cambiar configuración del adaptador. Ahí encontrarás los adaptadores de red de tu equipo. <br>
-                    2.	Encontrarás el adaptador Wi-fi y el adaptador Ethernet. Haz clic derecho al que estés conectado actualmente, dirígete a Propiedades, selecciona Protocolo de Internet versión 4, y presiona Propiedades. <br>
-                    3.	Asegúrate de que esté habilitada la opción de obtener la dirección del servidor DNS automáticamente. <br> <br>
-                    •	Ejecuta el comando <i>ipconfig /flushdns</i> en la línea de comandos para limpiar la caché DNS y actualizar la resolución de nombres. <br>
-                    •	Si el problema persiste, reiniciar el router o el servidor DNS (en caso de tener uno) puede resolver el problema.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">4. Hay conexión en la red LAN, pero no a internet (WAN)</div>
-                <div class="respuesta">•	Para ver que aplicaciones o archivos están ocupando cierto espacio, dirígete a Configuración, Sistema, Almacenamiento: Aquí podrás ver que es lo que está afectando a tu espacio, solo tienes que elegir qué archivos o aplicaciones borrar.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">5. ¿Creo que la velocidad de mi internet está limitada, como puedo comprobarlo?</div>
-                <div class="respuesta">
-                    •	Para revisar que tu equipo no esté limitando la velocidad de red, dirígete a Administrador de dispositivos y Adaptadores de red. <br>
-                    •	Ahí encontrarás principalmente Wi-fi y GbE, entre otros. Haz clic derecho al que estes usando y dirígete a propiedades, opciones avanzadas.<br>
-                    •	Fíjate que en las distintas propiedades estén fijados los valores más altos.
-
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">6. No me puedo asociar a un punto de acceso (AP)</div>
-                <div class="respuesta">
-                    •	Confirma que el dispositivo desde el que intentas conectarte al punto de acceso Wi-Fi está dentro del rango de IPs de la misma red. <br>
-                    •	Verifica si otros dispositivos pueden conectarse al punto de acceso Wi-Fi sin problemas. <br>
-                    •	Comprueba si el dispositivo tiene la tarjeta de red Wi-Fi activada y correctamente configurada para buscar y conectarse a redes disponibles. <br>
-                    •	Reiniciar el dispositivo desde el que estás intentando conectarte al punto de acceso Wi-Fi para refrescar la configuración de red. <br>
-                    •	Verificar si hay actualizaciones de firmware disponibles para el punto de acceso Wi-Fi y aplicarlas si es necesario. <br>
-                    •	Si el problema persiste, contacta con tu compañía de red o con el fabricante del punto de acceso.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">7. No puedo acceder al router</div>
-                <div class="respuesta">
-                    •	Si el router está encendido y estás conectado a este, y aun así no puedes visualizarlo en la red (hacer ping) debe ser porque no estas en la misma red, comprueba tu IP ejecutando el comando ipconfig en el símbolo del sistema. <br> <br>
-                    •	Si tu IP no pertenece a la misma red que tu router: <br>
-
-                    1.	Dirígete al Panel de control, Redes e Internet, Ver el estado y las tareas de red, Cambiar configuración del adaptador. Ahí encontrarás los adaptadores de red de tu equipo.<br>
-                    2.	Encontrarás el adaptador Wi-fi y el adaptador Ethernet. Haz clic derecho al que estés conectado actualmente, dirígete a Propiedades, selecciona Protocolo de Internet versión 4, y presiona Propiedades. <br> 
-                    3.	Asegúrate de que esté habilitada la opción de Obtener una dirección IP automáticamente.<br> <br>
-                    •	Si aún así no puedes hacer ping a tu router y estás por ethernet, verifica la conexión física o cambia el cable si es necesario.<br>
-                    •	También puede ser que el Firewall este bloqueando el ping o el mismo router está ignorándolo como medida de seguridad.
-
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">8. No se puede acceder remotamente a un dispositivo de red</div>
-                <div class="respuesta">
-                    1.	Verificación de Conexión y Configuración:<br>
-                    •	Asegúrate de que el dispositivo esté correctamente conectado a la red y revisa las configuraciones de red, verificando la compatibilidad de IP y subred.<br>
-                    <br>
-                    2.	Configuraciones de Seguridad y Cortafuegos:<br>
-                    •	Revisa y ajusta las configuraciones de seguridad, incluyendo cortafuegos y programas antivirus. Considera abrir puertos en el router, manteniendo prácticas seguras y limitando el acceso a direcciones IP necesarias.<br>
-                    <br>
-                    3.	Soporte Técnico y Respaldo del Fabricante:<br>
-                    •	Si los problemas persisten, comunícate con el soporte técnico del fabricante para obtener asistencia especializada y resolver cualquier obstáculo en el acceso remoto al dispositivo de red.
-
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="pregunta">9. No se enciende ningún led de la tarjeta de red</div>
-                <div class="respuesta">
+    <div>
+        <div class="faq-item">
+            <div class="pregunta">1. No se conecta a internet</div>
+            <div class="respuesta">
+                1. Problemas de conexión Wi-Fi:<br>
+                • Verifica la conexión Wi-Fi, reinicia el router y asegúrate que está bien conectado el cable de
+                red.<br>
                 <br>
-                <iframe style="margin-left: 400px;" width="560" height="315" src="https://www.youtube.com/embed/vAstmyX7WIE?si=Riouv8YPflSBZJdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
+                2. Controladores de red desactualizados o corruptos:<br>
+                • Actualiza los controladores de la tarjeta de red a través del Administrador de dispositivos.<br>
+                <br>
+                3. Configuración de TCP/IP incorrecta:<br>
+                • Ejecuta "ipconfig /renew" en la línea de comandos para renovar la configuración de red.<br>
+                <br>
+                4. Firewall o software de seguridad bloqueando la conexión:<br>
+                • Revisa la configuración del firewall para asegurarte de que no esté bloqueando la conexión a Internet.
 
-            <div class="faq-item">
-                <div class="pregunta">10. La tarjeta de red tiene el LED de color rojo</div>
-                <div class="respuesta">
-                    <br>
-                    <iframe style="margin-left: 400px;" width="560" height="315" src="https://www.youtube.com/embed/YoMX0lPi-gM?si=dtRal6Ykz70-1XJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
             </div>
-
         </div>
 
-    </body>
+        <div class="faq-item">
+            <div class="pregunta">2. No se conecta al servidor</div>
+            <div class="respuesta">
+                • Confirma si tanto el servidor con la maquina host están conectados en la misma red. <br>
+                • Asegúrate de que el funcionamiento del servidor es correcto y que es accesible desde otros
+                ordenadores. <br>
+                • Verifica la conexión haciendo un ping. <br>
+                • Revisar la configuración de red de ambos dispositivos (máscara de red, Puerta de enlace, DNS, etc.)
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">3. En Windows puedo navegar por IP, pero no por URL</div>
+            <div class="respuesta">
+                • Esto se debe a un problema con el DNS. <br>
+                1. Dirígete al Panel de control, Redes e Internet, Ver el estado y las tareas de red, Cambiar
+                configuración del adaptador. Ahí encontrarás los adaptadores de red de tu equipo. <br>
+                2. Encontrarás el adaptador Wi-fi y el adaptador Ethernet. Haz clic derecho al que estés conectado
+                actualmente, dirígete a Propiedades, selecciona Protocolo de Internet versión 4, y presiona Propiedades.
+                <br>
+                3. Asegúrate de que esté habilitada la opción de obtener la dirección del servidor DNS automáticamente.
+                <br> <br>
+                • Ejecuta el comando <i>ipconfig /flushdns</i> en la línea de comandos para limpiar la caché DNS y
+                actualizar la resolución de nombres. <br>
+                • Si el problema persiste, reiniciar el router o el servidor DNS (en caso de tener uno) puede resolver
+                el problema.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">4. Hay conexión en la red LAN, pero no a internet (WAN)</div>
+            <div class="respuesta">• Para ver que aplicaciones o archivos están ocupando cierto espacio, dirígete a
+                Configuración, Sistema, Almacenamiento: Aquí podrás ver que es lo que está afectando a tu espacio, solo
+                tienes que elegir qué archivos o aplicaciones borrar.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">5. ¿Creo que la velocidad de mi internet está limitada, como puedo comprobarlo?</div>
+            <div class="respuesta">
+                • Para revisar que tu equipo no esté limitando la velocidad de red, dirígete a Administrador de
+                dispositivos y Adaptadores de red. <br>
+                • Ahí encontrarás principalmente Wi-fi y GbE, entre otros. Haz clic derecho al que estes usando y
+                dirígete a propiedades, opciones avanzadas.<br>
+                • Fíjate que en las distintas propiedades estén fijados los valores más altos.
+
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">6. No me puedo asociar a un punto de acceso (AP)</div>
+            <div class="respuesta">
+                • Confirma que el dispositivo desde el que intentas conectarte al punto de acceso Wi-Fi está dentro del
+                rango de IPs de la misma red. <br>
+                • Verifica si otros dispositivos pueden conectarse al punto de acceso Wi-Fi sin problemas. <br>
+                • Comprueba si el dispositivo tiene la tarjeta de red Wi-Fi activada y correctamente configurada para
+                buscar y conectarse a redes disponibles. <br>
+                • Reiniciar el dispositivo desde el que estás intentando conectarte al punto de acceso Wi-Fi para
+                refrescar la configuración de red. <br>
+                • Verificar si hay actualizaciones de firmware disponibles para el punto de acceso Wi-Fi y aplicarlas si
+                es necesario. <br>
+                • Si el problema persiste, contacta con tu compañía de red o con el fabricante del punto de acceso.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">7. No puedo acceder al router</div>
+            <div class="respuesta">
+                • Si el router está encendido y estás conectado a este, y aun así no puedes visualizarlo en la red
+                (hacer ping) debe ser porque no estas en la misma red, comprueba tu IP ejecutando el comando ipconfig en
+                el símbolo del sistema. <br> <br>
+                • Si tu IP no pertenece a la misma red que tu router: <br>
+
+                1. Dirígete al Panel de control, Redes e Internet, Ver el estado y las tareas de red, Cambiar
+                configuración del adaptador. Ahí encontrarás los adaptadores de red de tu equipo.<br>
+                2. Encontrarás el adaptador Wi-fi y el adaptador Ethernet. Haz clic derecho al que estés conectado
+                actualmente, dirígete a Propiedades, selecciona Protocolo de Internet versión 4, y presiona Propiedades.
+                <br>
+                3. Asegúrate de que esté habilitada la opción de Obtener una dirección IP automáticamente.<br> <br>
+                • Si aún así no puedes hacer ping a tu router y estás por ethernet, verifica la conexión física o cambia
+                el cable si es necesario.<br>
+                • También puede ser que el Firewall este bloqueando el ping o el mismo router está ignorándolo como
+                medida de seguridad.
+
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">8. No se puede acceder remotamente a un dispositivo de red</div>
+            <div class="respuesta">
+                1. Verificación de Conexión y Configuración:<br>
+                • Asegúrate de que el dispositivo esté correctamente conectado a la red y revisa las configuraciones de
+                red, verificando la compatibilidad de IP y subred.<br>
+                <br>
+                2. Configuraciones de Seguridad y Cortafuegos:<br>
+                • Revisa y ajusta las configuraciones de seguridad, incluyendo cortafuegos y programas antivirus.
+                Considera abrir puertos en el router, manteniendo prácticas seguras y limitando el acceso a direcciones
+                IP necesarias.<br>
+                <br>
+                3. Soporte Técnico y Respaldo del Fabricante:<br>
+                • Si los problemas persisten, comunícate con el soporte técnico del fabricante para obtener asistencia
+                especializada y resolver cualquier obstáculo en el acceso remoto al dispositivo de red.
+
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">9. No se enciende ningún led de la tarjeta de red</div>
+            <div class="respuesta">
+                <br>
+                <iframe style="margin-left: 400px;" width="560" height="315"
+                    src="https://www.youtube.com/embed/vAstmyX7WIE?si=Riouv8YPflSBZJdS" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="pregunta">10. La tarjeta de red tiene el LED de color rojo</div>
+            <div class="respuesta">
+                <br>
+                <iframe style="margin-left: 400px;" width="560" height="315"
+                    src="https://www.youtube.com/embed/YoMX0lPi-gM?si=dtRal6Ykz70-1XJg" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer class="footerencabezado">
+        <div class="footerencabezado">
+            <a href="faqs.html">FAQ's</a>
+        </div>
+    </footer>
+</body>
+
 </html>
